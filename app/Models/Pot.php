@@ -21,6 +21,5 @@ class Pot extends Model
         'dimesion_width',
         'dimesion_height',
         'price',
-        'user_id'
     ];
 }

@@ -24,3 +24,7 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('/admin/pots', [PotsController::class, 'index'])->middleware('auth')->name('admin.pots.index');
+
+Route::get('/admin/pots/create', [PotsController::class, 'create'])->middleware('auth')->name('admin.pots.create');
+
+Route::post('/admin/pots/store', [PotsController::class, 'store'])->middleware('auth')->name('admin.pots.store');
